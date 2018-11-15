@@ -3,7 +3,7 @@ version: '2.1'
 services:
 
   nodeexporter:
-    image: prom/node-exporter:v0.15.0
+    image: prom/node-exporter:v0.16.0
     container_name: nodeexporter
     user: root
     privileged: true
@@ -23,7 +23,7 @@ services:
       org.label-schema.group: "monitoring"
 
   cadvisor:
-    image: google/cadvisor:v0.28.3
+    image: google/cadvisor:v0.32.0
     container_name: cadvisor
     volumes:
       - /:/rootfs:ro
